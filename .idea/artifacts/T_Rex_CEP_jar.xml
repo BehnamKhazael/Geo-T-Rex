@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="T-Rex-CEP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/T_Rex_CEP_jar</output-path>
+    <root id="archive" name="T-Rex-CEP.jar">
+      <element id="module-output" name="T-Rex-CEP" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.7/gson-2.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mil/nga/sf/2.0.3/sf-2.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/vividsolutions/jts/1.13/jts-1.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mil/nga/sf/sf-wkt/1.0.0/sf-wkt-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.5.3/antlr4-runtime-4.5.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

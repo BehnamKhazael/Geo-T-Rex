@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MMM-dd hh:mm:ss a } %level %c - %m %n" />
+        </Console>
+        <JDBC name="databaseAppender" tableName="geo">
+            <ConnectionFactory class="trex.utils.ConnectionFactory" method="getDatabaseConnection" />
+            <!-- <Column name="EVENT_ID" literal="APPLICATION_LOG_SEQUENCE.NEXTVAL" /> -->
+            <Column name="EVENT_DATE" isEventTimestamp="true" />
+            <Column name="LEVEL" pattern="%level" />
+            <Column name="LOGGER" pattern="%logger" />
+            <Column name="MESSAGE" pattern="%message" />
+            <Column name="THROWABLE" pattern="%ex{full}" />
+        </JDBC>
+        <Async name="Async">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="databaseAppender"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="databaseAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
